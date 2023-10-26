@@ -3,7 +3,7 @@
 # In a list format
 # Where only the part of the name after the first dash is displayed
 
-list=$(ls -p | grep -v /)
+list=$(ls)
 for items in $list
 	do
 		echo "$items" | cut -d '-' -f2
