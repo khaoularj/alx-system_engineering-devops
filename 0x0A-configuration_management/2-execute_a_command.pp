@@ -1,6 +1,6 @@
 #execute the command pkill using puppet
 
-exec {'killmenow':
-  command => 'pkill killmenow',
+exec {'pkill':
+  command  => 'pkill killmenow',
   provider => 'shell',
 }
