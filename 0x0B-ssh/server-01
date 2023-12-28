@@ -1,4 +1,4 @@
-#to log to my first server with the adress ip: 100.26.247.136
+#to log to my first server with the adress ip: 54.144.45.0
 
 eval $("ssh-agent")
 ssh-add /root/.ssh/id_rsa
