@@ -4,7 +4,7 @@
 #SSH client configuration must be configured to refuse to authenticate using a password
 
 file {'etc/ssh/ssh_config':
-  ensure  => file,
+  ensure  => present,
   content =>'
     Host *
     PasswordAuthentication no
