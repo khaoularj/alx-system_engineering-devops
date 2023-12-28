@@ -1,0 +1,5 @@
+#to log to my first server with the adress ip: 100.26.247.136
+
+eval $("ssh-agent")
+ssh-add /~/.ssh/id_rsa
+ssh ubuntu@54.144.45.0

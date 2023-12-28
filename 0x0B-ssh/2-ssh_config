@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 Include /etc/ssh/ssh_config.d/*.conf
 
 Host *
