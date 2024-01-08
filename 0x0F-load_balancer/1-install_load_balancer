@@ -49,5 +49,5 @@ backend serv
         server 366779-web-01 54.144.45.0:80 check
         server 366779-web-02 52.91.150.220:80 check
 " >> /etc/haproxy/haproxy.cfg
- 
-systemctl restart haproxy
+
+sudo service haproxy restart 
