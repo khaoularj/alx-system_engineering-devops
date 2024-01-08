@@ -42,9 +42,9 @@ defaults
 frontend http
         bind 0:80
         timeout client  50000
-        default_backend serv
+        default_backend server
 
-backend serv
+backend server
         balance roundrobin
         server 366779-web-01 54.144.45.0:80 check
         server 366779-web-02 52.91.150.220:80 check
