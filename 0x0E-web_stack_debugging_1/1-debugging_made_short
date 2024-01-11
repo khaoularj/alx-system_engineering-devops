@@ -2,4 +2,4 @@
 # Configures an Nginx server to listen on port 80
 
 sudo ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
-sudo service nginx stop
+sudo service nginx stop > /dev/null 2>&1 || true
