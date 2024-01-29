@@ -23,5 +23,4 @@ if __name__ == "__main__":
     print("Employee {} is done with tasks ({}/{})".format(
         user['name'], completed_tasks, total_tasks) + ":")
     for task in todo_list:
-        if task['completed']:
-            print(f"\t{task['title']}")
+        print(f"\t{task['title']}")
