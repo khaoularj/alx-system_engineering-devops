@@ -20,7 +20,7 @@ if __name__ == "__main__":
     total_tasks = len(todo_list)
     completed_tasks = sum(1 for task in todo_list if task['completed'])
 
-    print("Employee {} is done with tasks ({}/{})".format(
+    print("Employee {} is done with tasks({}/{})".format(
         user['name'], completed_tasks, total_tasks) + ":")
     for task in todo_list:
         if task['completed']:
