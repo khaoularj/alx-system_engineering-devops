@@ -9,17 +9,13 @@ def number_of_subscribers(subreddit):
     and returns the number of subscribers
     If not a valid subreddit, return 0"""
 
-    url = f"https://www.reddit.com/r/{subreddit}/about.json"
+    url = "https://www.reddit.com/r/{}/about.json".format(subreddit)
     headers = {'user-agent': 'request'}
     response = requests.get(url, headers=headers, allow_redirects=False)
 
     if response.status_code == 200:
-        data = response.json().get("data")
-        n_subscribers = data.get("subscribers")
+        data = response.json().get("data", {})
+        n_subscribers = data.get("subscribers", 0)
         return n_subscribers
     else:
         return 0
-
-
-if __name__ == '__main__':
-    print(number_of_subscribers(subreddit))
